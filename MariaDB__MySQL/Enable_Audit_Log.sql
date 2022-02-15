@@ -1,0 +1,5 @@
+SHOW GLOBAL VARIABLES LIKE 'plugin_dir';
+INSTALL SONAME 'server_audit';
+SHOW GLOBAL VARIABLES LIKE 'server_audit%';
+SET GLOBAL server_audit_events='CONNECT,QUERY,TABLE';
+SHOW GLOBAL VARIABLES LIKE 'server_audit%';
